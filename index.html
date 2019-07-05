@@ -1,0 +1,68 @@
+﻿<html lang="en">
+	<head>
+		<meta charset="UTF-8"><meta name="viewport" content="width=600, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="./css/content.css">
+		<link rel="stylesheet" type="text/css" href="./css/job.css">
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script><script>var wsUri = "ws://@HOST_PORT@/MiniParse"; /*DO NOT EDIT THIS VALUE*/</script>
+	</head>
+	<body class="resizable">
+		<script>
+			var myname = ["Amaret", "Previa"];
+
+			var defaultSort = "encdps";
+
+			var selectTab = "All";
+
+			var sortObject = 
+			{
+				"All":
+				{
+					"encdps":{label:"DPS", width:45, display:true,},
+					"damage":{label:"DMG", width:56, display:false},
+					"damage%":{label:"DMG%", display:true},
+					"crithit%":{label:"Crit%", display:true},
+					"DirectHitPct":{label:"DH%", display:true},
+					"CritDirectHitPct":{label:"DC%", display:true},
+					"maxhit":{label:"MaxHit", width:128, display:true},
+					"swings":{label:"Swings", width:34,display:false},
+					"misses":{label:"Miss", width:34,display:false},
+					"deaths":{label:"Deaths", width:34,display:true},
+					"duration":{label:"DUR", display:false},
+					"kills":{label:"Deaths", display:false},
+					"enchps":{label:"HPS", width:45, display:false},
+					"healed":{label:"Healed", width:56, display:false},
+					"critheal%":{label:"CritHeal%", display:false},
+					"OverHealPct":{label:"OverHeal%", display:false},
+					"heals":{label:"Heals", display:false},
+				},
+				"DPS":
+				{
+					"encdps":{label:"DPS", width:45, display:true,},
+					"damage":{label:"DMG", width:56, display:true},
+					"crithit%":{label:"Crit%", display:true},
+					"DirectHitPct":{label:"DH%", display:true},
+					"CritDirectHitPct":{label:"DC%", display:true},
+					"maxhit":{label:"MaxHit", width:128, display:true},
+					"swings":{label:"Swings", width:34,display:false},
+					"misses":{label:"Miss", width:34,display:false},
+				},
+				"HPS":
+				{
+					"enchps":{label:"HPS", width:45, display:true},
+					"healed":{label:"Healed", width:56, display:true},
+					"critheal%":{label:"CritHeal%", display:true},
+					"OverHealPct":{label:"OverHeal%", display:true},
+					"heals":{label:"Heals", display:true},
+				},
+				"Tank":
+				{
+					"ParryPct":{label:"Parry%", width:34,display:true},
+					"BlockPct":{label:"Blocked%", width:34,display:true},
+					"healstaken":{label:"Heal received", width:60,display:true},
+					"deaths":{label:"Deaths", width:34,display:true},
+				}
+			};
+		</script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
