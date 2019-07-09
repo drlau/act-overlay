@@ -559,7 +559,7 @@ function init()
 	"<div class=\"icons\">"+
 	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'left':'auto', 'right':'0px', 'top':'25px'}); $('.tooltip').html('<div>Refresh</div><div>Will refresh the Parse.</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/refresh.png) no-repeat center center; background-size:100% auto;\" onclick=\"location.href=location.href;\"></div>"+
 	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>Merge Pet</div><div>Currently not Working on english client</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/account-multiple-plus.png) no-repeat center center; background-size:90% auto;\" data-checked=\"true\" id=\"mergeAvatar\"></div>"+
-	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>Hide Names</div><div>Will blur out other Members name.</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/dns.png) no-repeat center center; background-size:90% auto;\" data-checked=\"true\" id=\"nicknamehide\"></div>"+
+	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>Hide Names</div><div>Will blur out other Members name.</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/dns.png) no-repeat center center; background-size:90% auto;\" data-checked=\"false\" id=\"nicknamehide\"></div>"+
 	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>125% Zoom</div><div>Will zoom the parse.</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/fullscreen.png) no-repeat center center; background-size:90% auto;\" data-checked=\"false\" id=\"magnify\" onclick=\"magnify();\"></div></div>";
 	
 	if(isFullscreen())
@@ -583,8 +583,7 @@ function init()
 	"</div>"+
 	"</div>"+
 	"</div>"+
-	"<div class=\"battlelog\" style=\"display:none;\">"+
-	"</div><div class=\"versions\">"+version+"</div>";
+	"<div class=\"battlelog\" style=\"display:none;\">";
 
 	$("body").append(html);
 	if (document.addEventListener) 

@@ -1,8 +1,8 @@
 ﻿<html lang="en">
 	<head>
 		<meta charset="UTF-8"><meta name="viewport" content="width=600, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-		<link rel="stylesheet" type="text/css" href="./css/content.css">
-		<link rel="stylesheet" type="text/css" href="./css/job.css">
+		<link rel="stylesheet" type="text/css" href="css/content.css">
+		<link rel="stylesheet" type="text/css" href="css/job.css">
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script><script>var wsUri = "ws://@HOST_PORT@/MiniParse"; /*DO NOT EDIT THIS VALUE*/</script>
 	</head>
 	<body class="resizable">
@@ -56,9 +56,10 @@
 				},
 				"Tank":
 				{
+					"damagetaken":{label:"Damage taken", width:60,display:true},
+					"healstaken":{label:"Heals received", width:60,display:true},
 					"ParryPct":{label:"Parry%", width:34,display:true},
 					"BlockPct":{label:"Blocked%", width:34,display:true},
-					"healstaken":{label:"Heal received", width:60,display:true},
 					"deaths":{label:"Deaths", width:34,display:true},
 				}
 			};
