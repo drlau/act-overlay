@@ -144,10 +144,8 @@ function encounterAct(e, n)
 
 	$("header .title").html(e.detail.Encounter.title=="Encounter"?"Parsing...":e.detail.Encounter.title);
 	$("header .duration").html(e.detail.Encounter.duration);
-	$("header .rdps").html(parseInt(e.detail.Encounter.encdps)+" RD");
-	$("header .rhps").html(parseInt(e.detail.Encounter.enchps)+ " RH");
-	$("header .rdamage").html(parseInt(e.detail.Encounter.damage)+" TD");
-	$("header .rhealed").html(parseInt(e.detail.Encounter.healed)+ " TH");
+	$("header .rdps").html(parseInt(e.detail.Encounter.encdps)+" RDPS");
+	$("header .rhps").html(parseInt(e.detail.Encounter.enchps)+ " RHPS");
 
 	for(var user in e.detail.Combatant)
 	{
@@ -551,15 +549,13 @@ function init()
 	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'left':'0px', 'right':'auto', 'top':'45px'}); $('.tooltip').html('<div>History</div><div>Shows the last 20 parses.</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/calendar-text.png) no-repeat center center; background-size:90% auto; float:left;\" onclick=\"if($('.title').html().toString().indexOf('집계 중') == -1){showBattleLog();}\"></div>"+
 	"<div class=\"duration\">00:00</div>"+
 	"<div class=\"title\">---</div>"+
-	"<div class=\"datacov\"><div class=\"rdps\">0 AvgDPS</div>"+
-	"<div class=\"rhps\">0 AvgHPS</div>"+
-	"<div class=\"rdamage\">0 Tot.Dmg</div>"+
-	"<div class=\"rhealed\">0 Tot.Heal</div></div>"+
+	"<div class=\"datacov\"><div class=\"rdps\">0 RDPS</div>"+
+	"<div class=\"rhps\">0 RHPS</div>"+
 	"<div class=\"icons\">"+
-	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'left':'auto', 'right':'0px', 'top':'25px'}); $('.tooltip').html('<div>Refresh</div><div>Will refresh the Parse.</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/refresh.png) no-repeat center center; background-size:100% auto;\" onclick=\"location.href=location.href;\"></div>"+
-	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>Merge Pet</div><div>Currently not Working on english client</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/account-multiple-plus.png) no-repeat center center; background-size:90% auto;\" data-checked=\"true\" id=\"mergeAvatar\"></div>"+
-	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>Hide Names</div><div>Will blur out other Members name.</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/dns.png) no-repeat center center; background-size:90% auto;\" data-checked=\"false\" id=\"nicknamehide\"></div>"+
-	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>125% Zoom</div><div>Will zoom the parse.</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/fullscreen.png) no-repeat center center; background-size:90% auto;\" data-checked=\"false\" id=\"magnify\" onclick=\"magnify();\"></div></div>";
+	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'left':'auto', 'right':'0px', 'top':'25px'}); $('.tooltip').html('<div>Reload overlay</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/refresh.png) no-repeat center center; background-size:100% auto;\" onclick=\"location.href=location.href;\"></div>"+
+	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>Merge pet (may not be working)</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/account-multiple-plus.png) no-repeat center center; background-size:90% auto;\" data-checked=\"true\" id=\"mergeAvatar\"></div>"+
+	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>Blur names</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/dns.png) no-repeat center center; background-size:90% auto;\" data-checked=\"false\" id=\"nicknamehide\"></div>"+
+	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>125% Zoom</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/fullscreen.png) no-repeat center center; background-size:90% auto;\" data-checked=\"false\" id=\"magnify\" onclick=\"magnify();\"></div></div>";
 	
 	if(isFullscreen())
 	{
