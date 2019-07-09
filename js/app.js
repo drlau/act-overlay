@@ -547,8 +547,8 @@ function init()
 	tabs+
 	"</div>"+
 	"<div class=\"icon\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'left':'0px', 'right':'auto', 'top':'45px'}); $('.tooltip').html('<div>History</div><div>Shows the last 20 parses.</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/calendar-text.png) no-repeat center center; background-size:90% auto; float:left;\" onclick=\"if($('.title').html().toString().indexOf('집계 중') == -1){showBattleLog();}\"></div>"+
-	"<div class=\"duration\">00:00</div>"+
-	"<div class=\"title\">---</div>"+
+	"<div class=\"duration\">akashi 0.0.1</div>"+
+	"<div class=\"title\">Shop opening</div>"+
 	"<div class=\"datacov\"><div class=\"rdps\">0 RDPS</div>"+
 	"<div class=\"rhps\">0 RHPS</div>"+
 	"<div class=\"icons\">"+
