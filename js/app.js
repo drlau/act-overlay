@@ -528,7 +528,6 @@ function resort(obj)
 
 function init()
 {
-	var version = "1.0.0-beta-1";
 	var temp = "";
 	var tabs = "";
 	for(var i in sortObject)
