@@ -79,7 +79,7 @@ function modifyItem(e)
 	{
 		var text = i;
 		if(sortObject[selectTab][i].display)
-			$(item).find(".datas>.values>.vv").append("<span style=\"float:left; overflow:hidden; margin-left:3px; text-align:center; font-family:'Segoe UI';"+(sortObject[selectTab][i].width===undefined?" width:38px;":" width:"+sortObject[selectTab][i].width+"px;")+"\">"+e.combat[i]+"</div>");
+			$(item).find(".datas>.values>.vv").append("<span style=\"float:left; overflow:hidden; margin-left:3px; text-align:center; font-family:'Segoe UI','Roboto';"+(sortObject[selectTab][i].width===undefined?" width:38px;":" width:"+sortObject[selectTab][i].width+"px;")+"\">"+e.combat[i]+"</div>");
 	}
 
 	var toprank = 0;
@@ -142,7 +142,8 @@ function encounterAct(e, n)
 		"Ifrit-Egi":"SMN"
 	}
 
-	$("header .title").html(e.detail.Encounter.title=="Encounter"?"Parsing...":e.detail.Encounter.title);
+	$("header .title").html(e.detail.Encounter.title);
+	// TODO: location
 	$("header .duration").html(e.detail.Encounter.duration);
 	$("header .rdps").html(parseInt(e.detail.Encounter.encdps)+" RDPS");
 	$("header .rhps").html(parseInt(e.detail.Encounter.enchps)+ " RHPS");
@@ -234,6 +235,7 @@ function encounterAct(e, n)
 
 				if(finduser>-1)
 				{
+					// TODO: percentage
 					combatant[finduser].combat = mergeCombatantDetail(combatant[finduser].combat, combatant[user].combat, e);
 					delete combatant[user];
 				}
@@ -279,6 +281,7 @@ function encounterAct(e, n)
 
 	mixeddps = combatant;
 
+	// battle history start
 	if($(".battlelog").find("div[data=\""+_a+"|"+_b+"|"+_c+"\"]").length == 0 && e.detail.Encounter.title != "Encounter")
 	{
 		$(".battlelog").prepend("<div select='no' data='"+_a+"|"+_b+"|"+_c+"' idx='"+(lastEncounterRecord+1)+"'>"+e.detail.Encounter.title+" ("+parseInt(e.detail.Encounter.encdps)+" RDPS)</div>");
@@ -300,6 +303,8 @@ function encounterAct(e, n)
 	{
 		$(".battlelog div")[20].remove();
 	}
+
+	// battle history end
 		
 	for(var user in combatant)
 	{

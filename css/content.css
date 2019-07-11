@@ -1,5 +1,5 @@
 html{margin:0px; padding:0px; position:fixed; left:0px; top:0px; right:0px; bottom:0px; border-radius:5px; box-shadow:inset 0px 0px 1px rgba(0,0,0,.25);}
-body{margin:0px; font-family: "Roboto", "Segoe UI";position:absolute; left:5px; right:5px; top:5px; bottom:5px; overflow:hidden;}
+body{margin:0px; font-family: "Segoe UI","Roboto";position:absolute; left:5px; right:5px; top:5px; bottom:5px; overflow:hidden;}
 
 ::-webkit-scrollbar
 {
@@ -171,6 +171,7 @@ header .title, header .duration, header .rdps, header .rhps, header .rdamage, he
 	padding-left:2px;
 	float:left;
 	font-size:11px;
+	font-family: "Segoe UI","Roboto";
 	line-height:22px;
 }
 
@@ -282,7 +283,7 @@ header .duration:before{content:'[';}
 {
 	float:left;
 	background:rgba(0,0,0,.4);
-	font-family: "Roboto", "Segoe UI";
+	font-family: "Segoe UI","Roboto";
 	letter-spacing:-1px;
 	font-size:11px;
 	display:inline-block;
@@ -395,7 +396,7 @@ header .duration:before{content:'[';}
 	0px -1px 0px rgba(0,0,0,.25), 
 	1px -1px 0px rgba(0,0,0,.25), 
 	-1px 1px 0px rgba(0,0,0,.25);
-	font-family: "Roboto", "Segoe UI";
+	font-family: "Segoe UI","Roboto";
 }
 
 .content>.item>.datas::before
