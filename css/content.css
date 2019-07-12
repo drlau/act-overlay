@@ -53,7 +53,6 @@ header
 	top:22px;
 	border-radius:5px;
 	height:22px;
-	background:rgba(255,255,255,.4);
 	padding:2px;
 	padding-top:0px;
 	-webkit-filter:drop-shadow(0px 0px 3px #000);
@@ -67,7 +66,7 @@ header
 	position:absolute;
 	top:-22px; left:0px;right:0px;
 	height:20px;
-	border-bottom:2px solid rgba(255,255,255,0.05);
+	border-bottom:2px solid rgba(24, 26, 27, 0.4);
 	font-size:12px;
 }
 
@@ -104,14 +103,14 @@ header
 
 .tabs .seltab
 {
-	background:rgba(255,255,255,.1);
+	background:rgba(24, 26, 27, 0.4);
 	z-index:99;
 }
 
 .tabs .seltab:before
 {
 	position:absolute;
-	border-color: transparent rgba(255,255,255,0.1) rgba(255,255,255,0.1) transparent;
+	border-color: transparent rgba(24, 26, 27, 0.4) rgba(24, 26, 27, 0.4) transparent;
 	z-index:99;
 	margin:0px;
 	margin-left:-18px;
@@ -120,7 +119,7 @@ header
 .tabs .seltab:after
 {
 	position:absolute;
-	border-color: transparent  transparent rgba(255,255,255,0.1) rgba(255,255,255,0.1);
+	border-color: transparent  transparent rgba(24, 26, 27, 0.4) rgba(24, 26, 27, 0.4);
 	z-index:99;
 	margin:0px;
 	margin-left:10px;
@@ -131,7 +130,7 @@ header .icon
 	width:18px;
 	height:18px;
 	border-radius:12px;
-	border:2px solid rgba(255,255,255,0.15);
+	border:2px solid rgba(255,255,255,0.5);
 	float:right;
 	margin-left:3px;
 	background-color:rgba(0,0,0,0.25) !important;
@@ -163,7 +162,18 @@ footer
 	box-shadow:0px 0px 3px #000;
 }
 
-header .title, header .duration, header .rdps, header .rhps, header .rdamage, header .rhealed
+header .title {
+	font-weight:bold;
+	text-shadow:0px 0px 3px #000;
+	color:rgba(255,255,255,0.6);
+	padding-left:2px;
+	float:left;
+	font-size:11px;
+	font-family: "Segoe UI","Roboto";
+	line-height:22px;
+}
+
+header .duration, header .rdps, header .rhps
 {
 	font-weight:bold;
 	text-shadow:0px 0px 3px #000;
@@ -182,9 +192,9 @@ header {
 /* header .duration {
 	color:rgb(93, 213, 227);
 } */
-body {
+/* body {
 	background-color: #181a1b
-}
+} */
 
 header .duration:after{content:']';}
 header .duration:before{content:'[';}
