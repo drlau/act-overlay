@@ -90,10 +90,10 @@
 .item[data-job=PLD]>.leftdeco::after{border-color:rgba(210, 255, 255, 1);}
 .item[data-job=PUG]>.leftdeco::after{border-color:rgba(0,0,0,0.25);}
 
-.item[data-job=RDM]>.leftdeco::after{border-color:rgba(102,0,0,0.25);}
+.item[data-job=RDM]>.leftdeco::after{border-color:rgba(102,0,0,1);}
 .item[data-job=ROG]>.leftdeco::after{border-color:rgba(0,0,0,0.25);}
 
-.item[data-job=SAM]>.leftdeco::after{border-color:rgba(179,89,0,0.25);}
+.item[data-job=SAM]>.leftdeco::after{border-color:rgba(179,89,0,1);}
 .item[data-job=SCH]>.leftdeco::after{border-color:rgba(60, 60, 170, 1);}
 .item[data-job=SMN]>.leftdeco::after{border-color:rgba(40, 150, 0, 1);}
 
